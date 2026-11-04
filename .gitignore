@@ -19,6 +19,10 @@
 
 # production
 /build
+/.site-release/
+
+# Guest reviews stored by the local Next.js server
+/.easyburger-data/
 
 # misc
 .DS_Store

@@ -1,36 +1,20 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Easy Burger Casablanca
 
-## Getting Started
+A French-first restaurant site built with Next.js. Three.js renders the five textured layers of the Double Easy, GSAP connects the poster strip to scrolling, Lenis smooths wheel input, and Anime.js animates the stamp when the burger opens. The scene includes a photographic first paint, a canvas fallback and reduced-motion support.
 
-First, run the development server:
+## Run locally
 
-```bash
+```sh
+npm ci
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open the local address printed by Next.js. Use `npm run build` and `npm start` for a production Node server.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Reviews
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+The Google panel presents an attributed review and a dated rating snapshot. Guest reviews go through `/api/reviews`. The Node server stores each review in `.easyburger-data/reviews/`. Set `EASYBURGER_REVIEWS_DIR` to a persistent volume when hosting the Node version. The private Sites build uses Cloudflare D1.
 
-## Learn More
+## Restaurant content
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Menu categories, prices, opening hours and venue links are in `app/Details.tsx`. Prices come from the supplied draft and are marked indicative. The gallery photographs come from the restaurant brief and require owner clearance for a public launch. The interactive hero is an original visual interpretation.
